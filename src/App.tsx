@@ -62,7 +62,7 @@ function Tasklist({ tasks }: { tasks: Array<Task> }) {
     <ul>
       {tasks.map((task) => (
         <li key={task.id}>
-          {task.title}: {task.completed}
+          {task.title}: {`${task.completed}`}
         </li>
       ))}
     </ul>
